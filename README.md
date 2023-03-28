@@ -1,88 +1,32 @@
-# Module 6 Challenge Web APIs: Code Quiz
 
-## Your Task
+Coding Quiz Challenge
 
-As you proceed in your journey to becoming a front-end web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
+This is a web application that presents the user with a timed quiz consisting of multiple-choice questions related to coding. The user must answer the questions within the given time limit, and incorrect answers will penalize their score and time by ten seconds. The final score is calculated based on the number of correct answers.
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework has taught you all the skills you need to succeed in this challenge.
- 
+Technologies Used
 
-## User Story
+HTML
+CSS
+JavaScript
+Getting Started
+To run this application, simply open the index.html file in a web browser.
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+Usage
 
-## Acceptance Criteria
+When the application is launched, the user is presented with a start screen containing a brief introduction to the quiz and a "Start Quiz" button. Clicking on this button starts the quiz and presents the user with the first question.
 
-Create a code quiz that contains the following requirements:
+Each question consists of a question title and a set of multiple-choice answers. The user must select one of the answers to proceed to the next question. If the user selects the correct answer, their score is incremented and they are presented with the next question. If the user selects an incorrect answer, their score is decremented and their time is reduced by ten seconds.
 
-* A start button that when clicked a timer starts and the first question appears.
- 
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
+When the user has answered all of the questions or the time runs out, the quiz ends and the user is presented with a final score and a form to enter their initials. After entering their initials and submitting the form, the user is taken to a high scores screen where they can view their score and the scores of other users.
 
-* The quiz should end when all questions are answered or the timer reaches 0.
+Development
 
-  * When the game ends, it should display their score and give the user the ability to save their initials and their score
-  
-## Mock-Up
+This application was developed using plain HTML, CSS, and JavaScript. The questions.js file contains an array of objects representing the quiz questions and answers, and the logic.js file contains the logic for displaying the questions, checking answers, and  Score.js calculating the final score. The styles.css file contains the styles for the application.
 
-The following animation demonstrates the application functionality:
+Please check my project by clicking on links below:
 
-![Animation of code quiz. Presses button to start quiz. Clicks the button for the answer to each question, displays if answer was correct or incorrect. Quiz finishes and displays high scores. User adds their intials, then clears their intials and starts over.](./assets/08-web-apis-challenge-demo.gif)
+https://parvez85.github.io/js-quiz-game/
 
-## Grading Requirements
+Please check the code by clicking on:
 
-This challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+https://github.com/parvez85/js-quiz-game
