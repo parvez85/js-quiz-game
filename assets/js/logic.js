@@ -9,6 +9,7 @@ start.onclick = function () {
     document.getElementById("questions").classList.remove('hide');
 
     show(question_count);
+    
     //start timer
 
     interval = setInterval(myclock, 1000);
@@ -76,7 +77,7 @@ function next() {
         playCorrectSound();
     } else {
 
-        count = count - 5;
+        count = count - 10;
         clearInterval(interval);
         document.getElementById('time').innerHTML = count;
         ans.innerHTML = 'wrong!';
